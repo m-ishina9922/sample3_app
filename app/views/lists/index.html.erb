@@ -2,6 +2,10 @@
 
 <% @lists.each do |list| %>
 
-<span><%= link_to  list.title ,"/lists/#{list.id}" %></span>
+<p>タイトル</p>
+
+<span>
+  <%= link_to  list.title , list_path(list.id) %>
+</span>
 
 <% end %>
