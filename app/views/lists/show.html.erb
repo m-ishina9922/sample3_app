@@ -5,3 +5,8 @@
 
 <p>本文</p>
 <p><%= @list.body %></p>
+
+<p>画像</p>
+<p><%= image_tag list.image , size: "200x200" %></p>
+
+<%= link_to  "編集" , edit_list_path(@list.id) %>
